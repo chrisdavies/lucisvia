@@ -186,5 +186,6 @@ h2, h1 {
         display: block;
         width: auto;
         padding: 1em 2em;
+        padding: .5em 2em 0;
     }
 }
