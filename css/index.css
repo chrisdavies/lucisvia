@@ -147,14 +147,15 @@ h2, h1 {
     #page-content {
         border: 0;
     }
-
+    
         #content-header .logo {
             float: left;
-            margin-top: -.5em;
+            margin-top: .5em;
         }
 
         #content-header h1 {
             display: block;
+            padding: .5em 0 0;
         }
 
         #content-header .sub {
