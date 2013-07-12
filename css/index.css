@@ -147,15 +147,21 @@ h2, h1 {
     #page-content {
         border: 0;
     }
-    
+
+    #content-header .page-block {
+        padding: 1em 0 0;
+        border: 0;
+    }
+
         #content-header .logo {
             float: left;
-            margin-top: .5em;
+            margin: .5em 1em 0;
         }
 
         #content-header h1 {
             display: block;
             padding: .5em 0 0;
+            margin-bottom: 1.25em;
         }
 
         #content-header .sub {
@@ -164,12 +170,17 @@ h2, h1 {
         }
 
     #content-header nav {
+        position: relative;
         display: block;
         float: inherit;
         margin: auto;
-        padding: 1em 0 0;
-        text-align: right;
+        padding: 1em;
+        background: #3C4A51;
     }
+
+        #content-header nav a {
+            color: #EEE;
+        }
 
     .major-block.banner {
         background: #5EBABA;
