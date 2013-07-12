@@ -1,22 +1,133 @@
-﻿html, body {
-    height: 100%;
-    width: 100%;
+﻿* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+html, body {
+    min-height: 100%;
+    min-width: 100%;
     font-family: Arial, Verdana, sans-serif;
     color: #3C4A51;
     padding: 0;
     margin: 0;
+    font-size: 1.1em;
+    line-height: 1.45em;
 }
 
 body {
-    background: #93B8CA;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background: #FAFAFA;
 }
 
-h1 {
-    position: absolute;
+a {
+    color: #5EBABA;
+}
+
+h2, h1 {
     font-weight: normal;
-    text-align: center;
-    top: 40%;
-    width: 100%;
+}
+
+    h1 sub {
+        display: block;
+        margin-top: .5em;
+        opacity: .8;
+    }
+
+#content-header .page-block {
+    background: #FFF;
+    border: 3px solid #F0F0F0;
+    border-top: 0;
+    border-bottom-width: 1px;
+}
+
+#content-header .logo {
+    float: left;
+    max-height: 5em;
+    margin: .4em 1em 0 0;
+}
+
+#content-header nav {
+    float: right;
+    margin-top: -1.5em;
+}
+
+    #content-header nav a {
+        display: inline-block;
+        margin-left: 1em;
+    }
+
+#content-header {
+    position: relative;
+    z-index: 1;
+}
+
+#page-content {
+    max-width: 1200px;
+    min-width: 400px;
+    margin: auto;
+    background: #FFF;
+    border: 3px solid #EEE;
+    border-top: 0;
+    padding: 0;
+}
+
+#content-body {
+    background: #FFF;
+    min-height: 20em;
+    border: 3px solid #EEE;
+    position: relative;
+    z-index: 1;
+}
+
+.page-block {
+    max-width: 1200px;
+    padding: 1em 2em;
+    margin: auto;
+}
+
+.major-block {
+    padding: 2em;
+}
+
+    .major-block.alt {
+        background: #F0F0F0;
+    }
+
+    .major-block.banner {
+        background: #D7EFEF url(img/sacredheart_large.png) left center no-repeat;
+        position: relative;
+        min-height: 20em;
+    }
+
+    .major-block.banner .block-body {
+        position: absolute;
+        background: #5EBABA;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 50%;
+        color: #FFF;
+        padding: 2em;
+    }
+
+    .major-block .links {
+        display: block;
+        margin: .5em 0 1.5em;
+    }
+
+.minor-block {
+    display: inline-block;
+    background: #FFF;
+    padding: 2em;
+    width: 33%;
+    vertical-align: top;
+}
+
+.subtext {
+    font-size: .9em;
+    opacity: .75;
+}
+
+.fb {
+    display: inline-block;
+    margin-right: 1em;
+    padding: .25em .5em;
+    background: #5EBABA;
+    color: #FFF;
 }
