@@ -136,13 +136,30 @@ h2, h1 {
 
 .fb {
     display: inline-block;
-    margin-right: 1em;
+    margin: 0 1em .5em 0;
     padding: .25em .5em;
     background: #5EBABA;
     color: #FFF;
 }
 
 @media only screen and (max-width: 700px) {
+    #content-header,
+    #page-content {
+        border: 0;
+    }
+
+        #content-header .logo {
+            float: left;
+            margin-top: -.5em;
+        }
+
+        #content-header h1 {
+            display: block;
+        }
+
+        #content-header .sub {
+            margin-top: 0;
+        }
 
     #content-header nav {
         display: block;
